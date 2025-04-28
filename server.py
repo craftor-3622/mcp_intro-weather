@@ -12,6 +12,12 @@ def add(a: int, b: int) -> int:
     return a + b
 
 
+@mcp.tool()
+def multi(a: int, b: int) -> int:
+    """Multiply two numbers"""
+    return a * b
+
+
 # Add a dynamic greeting resource
 @mcp.resource("greeting://{name}")
 def get_greeting(name: str) -> str:
